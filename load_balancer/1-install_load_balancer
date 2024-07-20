@@ -16,8 +16,8 @@ frontend oreste-frontend
         default_backend oreste-backend
 backend oreste-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6122-web-01 34.227.86.0:80 check
+        server 6122-web-02 54.89.169.250:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
