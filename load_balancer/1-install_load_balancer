@@ -13,7 +13,7 @@ server_config=\
 frontend yvette-frontend
         bind *:80
         mode http
-        default_backend oreste-backend
+        default_backend yvette-backend
 backend yvette-backend
         balance roundrobin
         server 6122-web-01 34.227.86.0:80 check
